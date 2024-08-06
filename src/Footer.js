@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <div className="relative mt-7 w-full">
-          <div className="footer-section lg:pb-4 lg:items-center lg:pt-4 pb-3 w-full lg:flex lg:justify-around   grid place-items-center bottom-0">
+          <div className="footer-section lg:pb-6 lg:items-center lg:pt-6 pb-3 w-full lg:flex lg:justify-around   grid place-items-center bottom-0">
             <ul className="flex mt-5 lg:hidden mb-4 gap-3">
                <a href="https://www.shaw.ca/privacy-policy/" className="text-gray-300  text-base  underline"> <li>Privacy Policy</li></a>
                <div className="w-0.3 h-4 mt-1.5 bg-gray-300"></div>

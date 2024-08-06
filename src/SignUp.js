@@ -63,8 +63,8 @@ function SignUp() {
 
        </div>
        <section className='w-full grid place-items-center'>
-       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='underline ml-1 text-sm font-normal text-blue-600' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support How To Reset My Password</a></p> 
-       <p className='text-black  mt-1   gap-2 font-normal  text-sm md:font-medium'>Already Know How ?<a className='hover:underline ml-1 text-sm font-normal text-blue-600' href='https://my.shaw.ca/services/internet'>Reset Password On My Shaw</a> </p> 
+       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='md:underline   ml-1 text-sm  font-normal cl' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support: How To Reset My Password</a></p> 
+       <p className='text-black  mt-1   gap-2 font-normal  text-sm md:font-medium'>Already Know How ?<a className='hover:underline ml-1 text-sm font-normal cl' href='https://my.shaw.ca/services/internet'>Reset Password On My Shaw</a> </p> 
        </section>
     </form>
     </div>
