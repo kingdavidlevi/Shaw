@@ -24,7 +24,9 @@ border-top: 1px solid #dadada;
    
   transition: right 0.3s ease-in-out;  
 }
-
+.slide-div.show{
+  right: 0;  
+}
 
 .slide-div:hover {
   right: 0;  
