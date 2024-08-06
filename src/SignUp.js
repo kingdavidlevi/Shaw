@@ -17,6 +17,13 @@ function SignUp() {
     }))
     console.log(inputs)
  }
+
+ 
+ const handleSignUp = (e) => {
+  e.preventDefault()
+}
+
+
   return (
     <div className='grid px-3 place-items-center'>
     <section className="mt-14 pb-10 lg:flex w-full lg:w-310  lg:place-content-start pt-10 bg-white rounded-sm shadow-sm">
@@ -52,7 +59,7 @@ function SignUp() {
        </div>
        <div className='lg:grid lg:place-content-center'>
        {inputs.email.length > 0 && inputs.password.length > 0 ? (
-       <button   className='  button mt-6 grid lg:place-items-center py-3 w-95% sm:w-full lg:w-72 font-semibold text-xl rounded-md text-white '>Sign in</button> ):   <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 '>Sign in</button> }
+       <button   className='  button mt-6 grid lg:place-items-center py-3 w-95% sm:w-full lg:w-72 font-semibold text-xl rounded-md text-white ' type="submit" onClick={handleSignUp}>Sign in</button> ):   <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 '>Sign in</button> }
 
        </div>
        <section className='w-full grid place-items-center'>
