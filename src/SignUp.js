@@ -53,12 +53,17 @@ function SignUp() {
        <div className='lg:grid lg:place-content-center'>
        {inputs.email.length > 0 && inputs.password.length > 0 ? (
        <button   className='  button mt-6 grid lg:place-items-center py-3 w-95% sm:w-full lg:w-72 font-semibold text-xl rounded-md text-white '>Sign in</button> ):   <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 '>Sign in</button> }
-       <p className='text-black text-base font-medium'>Having trouble <span><a className='hover:underline text-base font-normal text-blue-300' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support How To Reset My Password</a></span> </p>
-       </div>
 
+       </div>
+       <section className='w-full grid place-items-center'>
+       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='underline ml-1 text-sm font-normal text-blue-600' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support How To Reset My Password</a></p> 
+       <p className='text-black  mt-1   gap-2 font-normal  text-sm md:font-medium'>Already Know How ?<a className='hover:underline ml-1 text-sm font-normal text-blue-600' href='https://my.shaw.ca/services/internet'>Reset Password On My Shaw</a> </p> 
+       </section>
     </form>
     </div>
-    <div></div>
+    <div className='bg-gray-400 hidden lg:block h-96 mt-5 w-0.1'>
+
+    </div>
     </section>
 
     

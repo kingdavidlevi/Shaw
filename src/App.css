@@ -10,6 +10,15 @@ font-weight: bold;
 margin: auto;
 width: 85%;
 }
+.footer-section{
+ bottom: 0;
+font-style: Arial;
+max-height: 200px;
+width: 100%;
+margin: 0 auto;
+background-color: #333;
+border-top: 1px solid #dadada;
+}
 
    .username_input_occ{
     height: 40px;
