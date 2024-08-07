@@ -81,7 +81,7 @@ function SignUp() {
         <input className='username_input_occ h-10 outline-none border lg:w-96.5 w-80%  sm:w-99'  name="password" type="password" value={inputs.password}  onChange={handleFormChanges}  autocorrect="off" autocapitalize="off" autocomplete="off" tabIndex="1" placeholder=""/>
        <div>
         <section className='flex items-center gap-2'>
-       <input type="checkbox"  id="persistent_check_occ"  className='w-5 mt-4 h-5 checkers'   tabindex="4"/>
+       <input type="checkbox"  id="persistent_check_occ"  className='w-5 mt-4 h-5  cl'   tabindex="4"/>
        <div><p className='text-gray-500 mt-4 text-base font-normal'>Remember Shaw email</p></div>
       
  </section>

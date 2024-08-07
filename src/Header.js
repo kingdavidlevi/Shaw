@@ -16,7 +16,7 @@ function Header(){
         <div className=" grid place-items-center "><a className="text-sm cursor-pointer hover:text-black font-normal  cl" href="https://my.shaw.ca/">My Shaw</a></div>
         </section>
        </section>
-       <a className="text-sm cursor-pointer hover:text-black font-normal text-blue-700" href="https://my.shaw.ca/contact-us/"> 
+       <a className="text-sm cursor-pointer hover:text-black font-normal  cl" href="https://my.shaw.ca/contact-us/"> 
        <section className="md:flex gap-2 hidden">
     <FaRegCommentAlt className=" cl text-base mt-0.5 " />
 <div className="cl hover:text-black">Contact</div>
