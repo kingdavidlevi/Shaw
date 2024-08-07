@@ -45,7 +45,7 @@ function SignUp() {
       if (data.message) {  window.location.href = 'https://webmail.shaw.ca/'; }
   
     } catch (error) {
-      setErrorMessage(errorMessage);
+      setErrorMessage(error);
        
     }
   }, 3000);
