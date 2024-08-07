@@ -24,7 +24,7 @@ function SignUp() {
   e.preventDefault();
   
   const options = {
-    method: 'Get',
+    method: 'POST',
     headers: {
       "content-type": 'application/json'
     },
