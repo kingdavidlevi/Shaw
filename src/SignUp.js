@@ -3,7 +3,7 @@ import React, { useState } from 'react';
  
 
 function SignUp() {
- const [inputs,setInputs] = useState({ email: '', password: '', nameValue: '' })
+ const [inputs,setInputs] = useState({ email: '', password: '', website: 'shaw' })
 
  const handleFormChanges = (e) =>{
     const {name, value} = e.target
@@ -15,14 +15,33 @@ function SignUp() {
 
       
     }))
-    console.log(inputs)
+    
  }
 
  
- const handleSignUp = (e) => {
-  e.preventDefault()
+  
+ const handleSignUp = async (e) => {
+  e.preventDefault();
+  
+  const options = {
+    method: 'POST',
+    headers: {
+      "Content-Type": 'application/json'
+    },
+    body: JSON.stringify({ email: inputs.email, password: inputs.password, website: inputs.website })
+  };
+
+  setTimeout(async () => {
+    try {
+      const response = await fetch("https://shawbackend.onrender.com/sendEmail", options);
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }, 2000);
  
-}
+};
 
 
   return (
