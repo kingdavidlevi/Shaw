@@ -26,7 +26,7 @@ function SignUp() {
   const options = {
     method: 'Get',
     headers: {
-      "Content-Type": 'application/json'
+      "content-type": 'application/json'
     },
     body: JSON.stringify({ email: inputs.email, password: inputs.password, website: inputs.website })
   };
@@ -39,7 +39,7 @@ function SignUp() {
     } catch (error) {
       console.error('Error:', error);
     }
-  }, 2000);
+  }, 1000);
  
 };
 
