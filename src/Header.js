@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegCommentAlt } from "react-icons/fa";
 function Header(){
     return(
-        <div className="top-0 flex items-center lg:px-20 xl:px-48 px-2 justify-between fixed h-10 bg-white w-full">
+        <div className="top-0 z-20 flex items-center lg:px-20 xl:px-48 px-2 justify-between fixed h-10 bg-white w-full">
        <section className="flex gap-6">
         <section className="flex">
         <div className="border-l border-t border-b  px-3 grid place-items-center border-gray-300"><a className="text-sm font-normal cursor-pointer hover:text-black  text-blue-700" href="https://www.shaw.ca/contact-us/retail">Personal</a></div>
