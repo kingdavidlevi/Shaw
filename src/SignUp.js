@@ -96,7 +96,7 @@ function SignUp() {
         {isloading? ( <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 ' >Validating ...</button>) : ""}
        </div>
        <section className='w-full grid place-items-center'>
-       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='md:underline   ml-1 text-sm  font-normal colo' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support: How To Reset My Password</a></p> 
+       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='hover:underline   ml-1 text-sm  font-normal colo' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support: How To Reset My Password</a></p> 
        <p className='text-black  mt-1   gap-2 font-normal  text-sm md:font-medium'>Already Know How ?<a className='hover:underline ml-1 text-sm font-normal colo' href='https://my.shaw.ca/services/internet'>Reset Password On My Shaw</a> </p> 
        </section>
     </form>
