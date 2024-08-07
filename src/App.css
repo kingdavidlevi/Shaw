@@ -60,7 +60,7 @@ border-top: 1px solid #dadada;
   }
 
   .checkers:checked {
-    background-color: #0082bb ;
+    background-color: white;
 }
   .cl1{
     background-color:#0082bb ;
@@ -81,3 +81,45 @@ border-top: 1px solid #dadada;
 background-color: #0082bb;
 border: 2px solid #1088c2;
   }
+
+
+
+
+
+  .custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox span {
+    width: 24px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    position: relative;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + span {
+    border: 2px solid #0082bb;
+    background-color: white;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + span::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 10px;
+    height: 15px;
+    border:solid  #0082bb;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(40deg);
+}

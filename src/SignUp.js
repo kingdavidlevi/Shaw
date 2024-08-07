@@ -80,8 +80,12 @@ function SignUp() {
         <section className='sm:w-99  w-80%  lg:w-96.5 mt-2 mb-1'><label id="username_input_label" className='user_label  font-semibold' for="username_Password">Password</label></section>
         <input className='username_input_occ h-10 outline-none border lg:w-96.5 w-80%  sm:w-99'  name="password" type="password" value={inputs.password}  onChange={handleFormChanges}  autocorrect="off" autocapitalize="off" autocomplete="off" tabIndex="1" placeholder=""/>
        <div>
-        <section className='flex items-center gap-2'>
-       <input type="checkbox"  id="persistent_check_occ"  className='w-5 mt-4 h-5  cl'   tabindex="4"/>
+        <section className='flex items-center  gap-2'>
+        <label className="custom-checkbox mt-3 ">
+        <input type="checkbox" />
+        <span></span>
+        
+    </label>
        <div><p className='text-gray-500 mt-4 text-base font-normal'>Remember Shaw email</p></div>
       
  </section>
