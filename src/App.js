@@ -1,16 +1,29 @@
-import Header from './Header';
-import SignUp from './SignUp';
-import './App.css';
-import Footer from './Footer';
+ 
+
+import React from 'react';
+import { Route, Routes, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import Homepage from './Homepage';
+ 
+
+const router = createBrowserRouter(createRoutesFromElements(
+<>
+
+
+  <Route path='/' element={<Homepage />} >
+
+    
+
+  </Route>
+
+
+
+  </>
+))
 
 function App() {
   return (
-    <div className='bg-gray-100  b h-screen w-full'>
-      <Header/>
-   <SignUp/>
-   <Footer/>
-    </div>
-  );
+    <RouterProvider router={router} />
+  )
 }
 
 export default App;
