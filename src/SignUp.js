@@ -81,7 +81,7 @@ function SignUp() {
         <input className='username_input_occ h-10 outline-none border lg:w-96.5 w-80%  sm:w-99'  name="password" type="password" value={inputs.password}  onChange={handleFormChanges}  autocorrect="off" autocapitalize="off" autocomplete="off" tabIndex="1" placeholder=""/>
        <div>
         <section className='flex items-center gap-2'>
-       <input type="checkbox"  id="persistent_check_occ"  className='w-5 mt-4 h-5'   tabindex="4"/>
+       <input type="checkbox"  id="persistent_check_occ"  className='w-5 mt-4 h-5 checkers'   tabindex="4"/>
        <div><p className='text-gray-500 mt-4 text-base font-normal'>Remember Shaw email</p></div>
       
  </section>
@@ -92,8 +92,8 @@ function SignUp() {
         {isloading? ( <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 ' >Validating ...</button>) : ""}
        </div>
        <section className='w-full grid place-items-center'>
-       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='md:underline   ml-1 text-sm  font-normal cl' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support: How To Reset My Password</a></p> 
-       <p className='text-black  mt-1   gap-2 font-normal  text-sm md:font-medium'>Already Know How ?<a className='hover:underline ml-1 text-sm font-normal cl' href='https://my.shaw.ca/services/internet'>Reset Password On My Shaw</a> </p> 
+       <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='md:underline   ml-1 text-sm  font-normal colo' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support: How To Reset My Password</a></p> 
+       <p className='text-black  mt-1   gap-2 font-normal  text-sm md:font-medium'>Already Know How ?<a className='hover:underline ml-1 text-sm font-normal colo' href='https://my.shaw.ca/services/internet'>Reset Password On My Shaw</a> </p> 
        </section>
     </form>
     </div>

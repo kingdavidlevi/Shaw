@@ -58,11 +58,24 @@ border-top: 1px solid #dadada;
     
     
   }
+
+  .checkers:checked {
+    background-color: #0082bb ;
+}
   .cl1{
     background-color:#0082bb ;
   }
   .cl{
-  color:  #0082bb;}
+  color:  #0082bb;
+}
+
+.colo{
+  color:  #0082bb;
+}
+.colo:hover{
+  color:  #066187;
+}
+
  
   .button{
 background-color: #0082bb;
