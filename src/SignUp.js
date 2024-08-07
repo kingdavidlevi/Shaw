@@ -86,9 +86,9 @@ function SignUp() {
  </section>
        </div>
        <div className='lg:grid lg:place-content-center'>
-       {inputs.email.length > 0 && inputs.password.length > 0 && !isloading   ?  (
-       <button   className='  button mt-6 grid lg:place-items-center py-3 w-95% sm:w-full lg:w-72 font-semibold text-xl rounded-md text-white ' type="submit" onClick={handleSignUp}>Sign in</button> ):   <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 ' >Validating ...</button> }
-  
+       {inputs.email.length > 0 && inputs.password.length > 0    ?  (
+       <button   className={`  button mt-6 grid lg:place-items-center py-3 w-95% sm:w-full lg:w-72 font-semibold text-xl rounded-md text-white ${isloading ? "hidden" : "block" } `}  type="submit" onClick={handleSignUp} >Sign in</button> ):   <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 ' >Sign in</button> }
+        {isloading? ( <button disabled='true' className='bg-gray-200 grid lg:place-items-center lg:w-72 sm:w-full  mt-6 py-3 w-95% font-semibold text-xl rounded-md text-gray-400 ' >Validating ...</button>) : ""}
        </div>
        <section className='w-full grid place-items-center'>
        <p className='text-black   mt-5 text-sm font-normal md:font-medium'>Having trouble ?<a className='md:underline   ml-1 text-sm  font-normal cl' href='https://support.shaw.ca/t5/internet-articles/how-to-change-your-shaw-email-password/ta-p/6430'>Shaw Support: How To Reset My Password</a></p> 
